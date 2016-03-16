@@ -1,0 +1,205 @@
+html {
+  height:100%;
+}
+body {
+  background: url("https://rawgithub.com/subtlepatterns/SubtlePatterns/gh-pages/tiny_grid.png");
+  height:100%;
+  font-family:'Plantin W01';
+}
+h1 {
+  font-family:'Neuzeit Office W01';
+  font-size:1.666em;
+  font-weight:500;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.polygon {
+  min-width:1px;
+  min-height:1px;
+  background-color:lightblue;
+  width: 100%;
+  height: 150px;
+  /*line-height: 150px;*/
+  text-align: center;
+  color: #eee;
+  transition: all 200ms ease-out;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  flex-grow:0;
+  flex-shrink:1;
+  border:10px solid white;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+}
+.polygon.border-left {
+  border-left-width:0;
+}
+.polygon.border-bottom{
+  border-bottom-width:0;
+}
+.polygon.border-all{
+  border:0;
+}
+.polygon[data-id="1"] {
+  flex-basis:60vh;
+  background-color: rgb(111,239,204);
+  background-image: url('fungi.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 80% auto;
+
+}
+.polygon[data-id="2"] {
+  flex-basis:40vh;
+  background-image: url('caviar.jpg');
+}
+.polygon[data-id="3"] {
+  flex-basis: 50vh;
+  background-image: url('swish2.jpg');
+}
+.polygon[data-id="0"] {
+  display: flex;
+  flex-direction: row;
+  flex-basis:50vh;
+}
+.polygon[data-id="5"],
+.polygon[data-id="4"] {
+  height: 50vh;
+}
+.polygon[data-id="5"] {
+  background-image: url('trout.jpg');
+}
+.polygon[data-id="4"] {
+  width: 10%;
+  background-image: url('mari.jpg');
+  background-size:contain;
+}
+.polygon[data-id="6"] {
+  flex-basis:70vh;
+}
+.polygon[data-id="7"] {
+  flex-basis:70vh;
+}
+.singleton {
+  position:absolute;
+  top:35vh;
+  left:22vw;
+}
+.notice {
+  width:250px;height:250px;
+  border-radius:50%;
+  /*outline:10px solid white;*/
+  background-color:white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color:black;
+  padding:18px;
+  overflow:hidden;
+
+}
+.notice:hover{
+  opacity:1;
+}
+.main-container {
+  height:100%;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  height:100%;
+}
+.left {
+  width:32%;
+}
+.center {
+  width:48%;
+}
+.right {
+  width:20%;
+  background-color:#1C242B;
+}
+.logo {
+  text-align: center;
+  margin-top:8vh;
+  margin-bottom:6vh;
+}
+.logo img {
+  width:50%;
+  height:auto;
+}
+.divider {
+  width:60%;
+  border-bottom:2px solid white;
+  margin: 0 auto;
+}
+a {
+  background-color: transparent;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.55em;
+  font-weight: 500;
+  margin: 1em auto;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: white;
+  transition: all 200ms ease-out;
+}
+a:hover {
+  transition: all 200ms ease-out;
+  text-decoration: underline;
+}
+a:visited {
+  color:white;
+}
+nav {
+  margin-top:1vh;
+  margin-bottom:1vh;
+}
+button {
+  width: 50%;
+  height: 41px;
+  background-color: rgba(0,0,0,0);
+  border: 1px solid white;
+  margin: 0 auto;
+  margin-top: 22vh;
+  font-weight: 600;
+}
+.logistics span {
+  display: block;
+  font-weight:500;
+  letter-spacing: 1px;
+  font-size: 1.1em;
+  line-height: 1.333rem;
+}
+.logistics{
+  background-color: rgba(0,0,0,0.3);
+  width:100%;height:100%;
+  position:absolute;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity:0;
+
+}
+.polygon:hover .logistics{
+  opacity:1;
+}
+.logistics .title {
+  font-size:2em;
+  font-weight:300;
+  margin-bottom:16px;
+}
