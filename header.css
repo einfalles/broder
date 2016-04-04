@@ -63,7 +63,15 @@
   max-height: 100%;
 }
 .polygon[data-id="6"] {
-  flex-basis:70vh;
+  flex-basis:60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:pink;
+  background-image:url('broder-subway.png');
+  background-size: auto 106%;
+  border: none;
+  position: relative;
 }
 .polygon[data-id="7"] {
   flex-basis:auto;
@@ -73,4 +81,50 @@
 }
 .singleton {
   top:40vh;
+}
+a:visited {
+  color:black;
+}
+#specials {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 10px solid white;
+  border-left-width: 0;
+  left:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-width: 0;
+}
+#specials-border {
+  width: 90%;
+  height: 95%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 4px solid #1C242B;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#specials-border a {
+  color: orange;
+  font-size:1.3159em;
+  margin-bottom:0.897em;
+}
+#alert {
+  font-size:0.897em;
+  font-weight:600;
+  letter-spacing: 1px;
+  color: black;
+  position: absolute;
+  width: 76%;
+  left: 2em;
+  bottom: 2em;
+  text-align: left;
 }
