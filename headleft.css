@@ -1,0 +1,80 @@
+.main {
+  height:90%;
+}
+.navigation {
+  height:10%;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color:white;
+  border-bottom:1px solid rgba(0,0,0,0.2);
+  text-align: center;
+}
+.right {}
+.navigation a {
+  font-size:15px;
+  color:black;
+  display: inline-block;
+  margin:auto 2em;
+}
+.right .polygon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.polygon[data-id="1"] {
+  flex-basis:60vh;
+  background-color: rgb(111,239,204);
+  background-image: url('fungi.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 80% auto;
+
+}
+.polygon[data-id="2"] {
+  flex-basis:40vh;
+  background-image: url('caviar.jpg');
+}
+.polygon[data-id="3"] {
+  flex-basis: 50vh;
+  background-image: url('swish2.jpg');
+}
+.polygon[data-id="0"] {
+  display: flex;
+  flex-direction: row;
+  flex-basis:50vh;
+}
+.polygon[data-id="5"],
+.polygon[data-id="4"] {
+  height: 50vh;
+  position: absolute;
+}
+.polygon[data-id="5"] {
+  background-image: url('trout.jpg');
+  width:90%;
+  max-height: 100%;
+  right:0;
+}
+.polygon[data-id="4"] {
+  width: 10%;
+  background-image: url('mari.jpg');
+  background-size:contain;
+  max-height: 100%;
+}
+.polygon[data-id="6"] {
+  flex-basis:70vh;
+}
+.polygon[data-id="7"] {
+  flex-basis:auto;
+}
+.polygon a {
+  margin:0;
+}
+.right .border-left {
+  border-right-width: 0;
+  border-left-width: 10px;
+}
+.singleton {
+  left:42vw;
+}
