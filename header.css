@@ -128,3 +128,34 @@ a:visited {
   bottom: 2em;
   text-align: left;
 }
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 200px 200px;
+  border-color: transparent transparent #007bff transparent;
+  position: absolute;
+  bottom:10px;
+  right:10px;
+}
+
+.trapezoid {
+  border-bottom: 120px solid white;
+  border-left: 110px solid transparent;
+  border-right: 0px solid transparent;
+  height: 0;
+  width: 45px;
+  position: absolute;
+  bottom: 9px;
+  right: 5px;
+}
+.trapezoid.white {
+  border-bottom-color:lightblue;
+  position: absolute;
+  top: 0;
+  width: 60%;
+}
+.polygon a#bae:hover #bae{
+  border-bottom-width:40px;
+  color:pink;
+}
