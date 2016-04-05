@@ -245,7 +245,7 @@ a:visited {
   stroke-alignment: outer;*/
 }
 .trap-container svg #fill {
-  fill:red;
+  fill:#57C1AE;
 }
 .trap-content {
   display: inline-block;
