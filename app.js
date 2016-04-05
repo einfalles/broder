@@ -32,24 +32,51 @@ $(document).ready(function(){
 					from : path.attr( 'd' ),
 					to : el.getAttribute( 'data-path-hover' )
 				};
-      el = el.parentElement.parentElement;
-			el.addEventListener( 'mouseenter', function() {
-				path.animate( { 'path' : pathConfig.to }, speed, easing );
-        market.css({
-            '-webkit-transform' :'translate(-20px,20px) '+'rotate('+ rotation +'deg)',
-                 '-moz-transform' : 'translate(-20px,20px) '+'rotate('+ rotation +'deg)',
-                 '-ms-transform' : 'translate(-20px,20px) '+'rotate('+ rotation +'deg)',
-                 'transform' : 'translate(-20px,20px) '+'rotate('+ rotation +'deg)'})
-			} );
+        console.log(document.getElementsByClassName('fucker'));
+        // el = document.getElementById('poly-targ');
+        var targ = document.getElementById('poly-targ');
+        if (targ != null) {
+          el = targ
+          antirotation = -60;
+          el.addEventListener( 'mouseleave', function() {
+    				path.animate( { 'path' : pathConfig.from }, speed, easing );
+            market.css({
+            '-webkit-transform' : 'translate(0%,0%) '+'rotate('+ antirotation +'deg)',
+                             '-moz-transform' : 'translate(0%,0%) '+'rotate('+ antirotation +'deg)',
+                             '-ms-transform' : 'translate(0%,0%) '+'rotate('+ antirotation +'deg)',
+                             'transform' : 'translate(0%,0%) '+'rotate('+ antirotation +'deg)'});
+    			} );
+          el.addEventListener( 'mouseenter', function() {
+    				path.animate( { 'path' : pathConfig.to }, speed, easing );
+            market.css({
+                '-webkit-transform' :'translate(-15px,50px) '+'rotate('+ rotation +'deg)',
+                     '-moz-transform' : 'translate(-15px,50px) '+'rotate('+ rotation +'deg)',
+                     '-ms-transform' : 'translate(-15px,50px) '+'rotate('+ rotation +'deg)',
+                     'transform' : 'translate(-15px,50px) '+'rotate('+ rotation +'deg)'});
+    			} );
+        } else {
+          el = el.parentElement.parentElement;
+          el.addEventListener( 'mouseleave', function() {
+    				path.animate( { 'path' : pathConfig.from }, speed, easing );
+            market.css({
+            '-webkit-transform' : 'translate(0%,0%) '+'rotate('+ antirotation +'deg)',
+                             '-moz-transform' : 'translate(0%,0%) '+'rotate('+ antirotation +'deg)',
+                             '-ms-transform' : 'translate(0%,0%) '+'rotate('+ antirotation +'deg)',
+                             'transform' : 'translate(0%,0%) '+'rotate('+ antirotation +'deg)'})
+    			} );
+          el.addEventListener( 'mouseenter', function() {
+    				path.animate( { 'path' : pathConfig.to }, speed, easing );
+            market.css({
+                '-webkit-transform' :'translate(-20px,20px) '+'rotate('+ rotation +'deg)',
+                     '-moz-transform' : 'translate(-20px,20px) '+'rotate('+ rotation +'deg)',
+                     '-ms-transform' : 'translate(-20px,20px) '+'rotate('+ rotation +'deg)',
+                     'transform' : 'translate(-20px,20px) '+'rotate('+ rotation +'deg)'})
+    			} );
+        }
 
-			el.addEventListener( 'mouseleave', function() {
-				path.animate( { 'path' : pathConfig.from }, speed, easing );
-        market.css({
-        '-webkit-transform' : 'translate(0%,0%) '+'rotate('+ antirotation +'deg)',
-                         '-moz-transform' : 'translate(0%,0%) '+'rotate('+ antirotation +'deg)',
-                         '-ms-transform' : 'translate(0%,0%) '+'rotate('+ antirotation +'deg)',
-                         'transform' : 'translate(0%,0%) '+'rotate('+ antirotation +'deg)'})
-			} );
+
+
+
 		} );
 	}
 
