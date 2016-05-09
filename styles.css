@@ -49,7 +49,7 @@ h1 {
 .polygon[data-id="1"] {
   flex-basis:60vh;
   background-color: rgb(111,239,204);
-  background-image: url('fungi.jpg');
+  /*background-image: url('fungi.jpg');*/
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 80% auto;
@@ -57,11 +57,11 @@ h1 {
 }
 .polygon[data-id="2"] {
   flex-basis:40vh;
-  background-image: url('caviar.jpg');
+  /*background-image: url('caviar.jpg');*/
 }
 .polygon[data-id="3"] {
   flex-basis: 50vh;
-  background-image: url('swish2.jpg');
+  /*background-image: url('swish2.jpg');*/
 }
 .polygon[data-id="0"] {
   display: flex;
@@ -73,11 +73,11 @@ h1 {
   height: 50vh;
 }
 .polygon[data-id="5"] {
-  background-image: url('trout.jpg');
+  /*background-image: url('trout.jpg');*/
 }
 .polygon[data-id="4"] {
   width: 10%;
-  background-image: url('mari.jpg');
+  /*background-image: url('mari.jpg');*/
   background-size:contain;
 }
 .polygon[data-id="6"] {

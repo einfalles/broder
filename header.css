@@ -26,7 +26,7 @@
 .polygon[data-id="1"] {
   flex-basis:60vh;
   background-color: rgb(111,239,204);
-  background-image: url('fungi.jpg');
+  /*background-image: url('fungi.jpg');*/
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 80% auto;
@@ -34,11 +34,11 @@
 }
 .polygon[data-id="2"] {
   flex-basis:40vh;
-  background-image: url('caviar.jpg');
+  /*background-image: url('caviar.jpg');*/
 }
 .polygon[data-id="3"] {
   flex-basis: 50vh;
-  background-image: url('swish2.jpg');
+  /*background-image: url('swish2.jpg');*/
 }
 .polygon[data-id="0"] {
   display: flex;
@@ -51,14 +51,14 @@
   position: absolute;
 }
 .polygon[data-id="5"] {
-  background-image: url('trout.jpg');
+  /*background-image: url('trout.jpg');*/
   width:90%;
   max-height: 100%;
   right:0;
 }
 .polygon[data-id="4"] {
   width: 10%;
-  background-image: url('http://gallantandjones.files.wordpress.com/2011/06/josef_frank_hawaii_thescienceofdesign.jpeg');
+  /*background-image: url('http://gallantandjones.files.wordpress.com/2011/06/josef_frank_hawaii_thescienceofdesign.jpeg');*/
   background-size:cover;
   max-height: 100%;
 }
@@ -68,7 +68,7 @@
   align-items: center;
   justify-content: center;
   background-color:pink;
-  background-image:url('broder-subway.png');
+  /*background-image:url('broder-subway.png');*/
   background-size: auto 106%;
   border: none;
   position: relative;
