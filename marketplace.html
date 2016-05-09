@@ -27,42 +27,43 @@
 			<a href="#">Water Avenue Coffee</a>
 			<a href="#">Contact</a>
 		</div>
+		<style>
+			.h-full {
+				height:90vh;
+			}
+			.w-40 {
+				width: 40vw;
+			}
+			.border-left {
+				border-left-width: 0 !important;
+			}
+			.flex-col{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+			.flex-col button {
+				margin:0 auto;
+				padding:0.5rem 1rem;
+				border:2px solid white;
+				color: white;
+				background-color:rgba(200,134, 198,0.2);
+			}
+		</style>
 		<div class="main">
-			<div class="column third left">
-				<div class="polygon border-bottom" data-id="1">
-					<div class="logistics">
-						<span class="title">Cafe Broder</span>
-						<span class="hours">10:00 AM - 11:00 AM</span>
-						<span class="location">333 RAD Kitchen, Portland, OR 97232</span>
-					</div>
-				</div>
-				<div class="polygon" data-id="2">
-					<div class="logistics">
-						<span class="title">Broder Soder</span>
-						<span class="hours">10:00 AM - 11:00 AM</span>
-						<span class="location">333 RAD Kitchen, Portland, OR 97232</span>
-					</div>
+			<div class="column third w-40">
+				<div class="polygon h-full flex-col">
+						<span>Gift Certificate</span>
+						<span>Price Varies</span>
+						<button>Buy Now</button>
 				</div>
 			</div>
-			<div class="column third center">
-				<div class="polygon border-bottom border-left" data-id="3">
-					<div class="logistics">
-						<span class="title">Broder Nord</span>
-						<span class="hours">10:00 AM - 11:00 AM</span>
-						<span class="location">333 RAD Kitchen, Portland, OR 97232</span>
-					</div>
-				</div>
-				<div class="polygon border-all" data-id="0">
-					<div class="polygon border-left" data-id="4">
-						<a href="#" class="nnw">Nordia House</a>
-					</div>
-					<div class="polygon" data-id="5">
-						<div class="logistics">
-							<span class="title">Broder at Hood River</span>
-							<span class="hours">10:00 AM - 11:00 AM</span>
-							<span class="location">333 RAD Kitchen, Portland, OR 97232</span>
-						</div>
-					</div>
+			<div class="column third w-40">
+				<div class="polygon h-full border-left flex-col">
+						<span>Gift Certificate</span>
+						<span>Price Varies</span>
+						<button>Buy Now</button>
 				</div>
 			</div>
 			<div class="column third right">
@@ -77,17 +78,6 @@
 							<!-- <span id="alert">*This is an important notification. Listen up.</span> -->
 						</div>
 					</div>
-					<!-- <a href="#" style="    position: absolute;
-    left: 0;color:black;width:97%;height: 88%;
-    padding-top: 8%;
-    border: 4px solid black;">Menus</a>
-		<a href="#">Press</a>
-		<span style="    color: black;
-    position: absolute;
-    width: 92%;
-    left: 12px;
-    bottom: 12px;
-    text-align: left;">*This is an important notification. Listen up.</span> -->
 				</div>
 				<div class="polygon border-left border-bottom" data-id="7" style="background-image:url(https://gallantandjones.files.wordpress.com/2011/06/picture-8.png);">
 					<a href="#" style="background-color:white; padding:6px 8px;">Gift Certificates</a>
@@ -119,11 +109,6 @@
 				<!-- <div class="polygon border-left border-bottom" data-id="9"><a href="#">Press</a></div>
 				<div class="polygon border-left border-bottom" data-id="11"><a href="#">Social</a></div>
 				<div class="polygon border-left" data-id="12"><a href="#">Water Ave Coffee</a></div> -->
-			</div>
-			<div class="singleton">
-				<div class="polygon notice">
-					<h1 class="js-hello fade-out-in" id="hello">Hållo</h1>
-				</div>
 			</div>
 			<div class="footer">
 				<span>Open: Mon - Thurs: 11am - 9pm / Fri - Sun: 11am - 9pm</span>

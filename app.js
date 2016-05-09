@@ -1,6 +1,6 @@
 var colors = ['#C62828','#2196F3','#7986CB','#673AB7','#3F51B5','#3949AB','#009688','#283593','#1A237E'];
 // Math.floor((Math.random() * 9));
-var places = ['swish.jpg','diamond.jpg','pattern.jpg','raw.jpg','staples.jpg']
+var places = ['Hello','Howdy','Good Morning','Whats up?','Hi']
 var polys = document.querySelectorAll('[data-id]');
 
 for (i=0;i<polys.length;i++) {
@@ -16,6 +16,15 @@ $(document).ready(function(){
   $('.polygon[data-id="8"]').mouseover(function(){
     $('.trapezoid').css('border-bottom-width','40px');
   });
+  //  setInterval(hello, 600);
+  setInterval(function(){
+    var helloIndex = Math.floor((Math.random() * 5));
+    $('#hello').fadeOut(300,function(){
+      var $this = $(this);
+      $this.text(places[helloIndex]);
+      $this.fadeIn(500);
+    });
+  },6000);
 });
 (function() {
 

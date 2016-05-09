@@ -1,0 +1,47 @@
+<!doctype html>
+<html land="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/3.0.3/normalize.css">
+	<script type="text/javascript" src="//fast.fonts.net/jsapi/ddd5e1e1-d28e-4d8d-84a2-2cf48c4c5cfc.js"></script>
+	<script   src="https://code.jquery.com/jquery-1.12.2.min.js"   integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk="   crossorigin="anonymous"></script>
+</head>
+<body>
+<style>
+	.app-wrapper {
+		display: flex;
+		flex-direction: row;
+	}
+	.container {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		border: 0;
+	}
+	.bg-pink {
+		background-color: pink;
+	}
+	.bg-blue {
+		background-color: blue;
+	}
+	.m-h-100 {
+		min-height: 100vh;
+	}
+	.w-75 {
+		width: 75%;
+	}
+	.w-25 {
+		width: 25%;
+	}
+</style>
+<div class="app-wrapper">
+	<div class="main w-75 m-h-100 bg-pink">
+		<div class="container">
+		</div>
+	</div>
+	<div class="side w-25 m-h-100 bg-blue">
+	</div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
