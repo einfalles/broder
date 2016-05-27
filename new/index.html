@@ -14,6 +14,8 @@
     <script src="js/vendor/jquery-1.11.2.min.js"></script>
     <script src="js/main.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/css/lightgallery.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/js/lightgallery-all.min.js"></script>
 </head>
 <body>
   <div class="container">
@@ -117,11 +119,81 @@
             </ul>
           </div>
           <div class="sidebar__bottom w-100 h-20">
-            <a href="#" class="fa fa-pencil"></a>
+            <a href="#" class="fa fa-pencil" id="north"></a>
             <div class="side-divider"></div>
-            <a href="#"  class="fa fa-gift"></a>
+            <a href="#"  class="fa fa-gift" id="hood"></a>
             <div class="side-divider"></div>
-            <a href="#" class="fa fa-shopping-cart"></a>
+            <a href="#" class="fa fa-shopping-cart" id="south"></a>
+            <!-- <div id="lightgallery" class="fa fa-shopping-cart">
+              <a href="http://tympanus.net/Development/ImageGridEffects/img/thumbs/3.jpg">
+                  <img src="http://tympanus.net/Development/ImageGridEffects/img/thumbs/3.jpg" />
+              </a>
+              <a href="http://tympanus.net/Development/ImageGridEffects/img/thumbs/3.jpg">
+                  <img src="http://tympanus.net/Development/ImageGridEffects/img/thumbs/2.jpg" />
+              </a>
+            </div> -->
+            <script type="text/javascript">
+                $(document).ready(function() {
+                  // NORTH
+                  $("#north").on('click',function(){
+                    $(this).lightGallery({
+                      dynamic: true,
+                      dynamicEl: [{
+                          "src": 'http://tympanus.net/Development/ImageGridEffects/img/original/3.jpg',
+                          'thumb': 'http://tympanus.net/Development/ImageGridEffects/img/thumbs/3.jpg',
+                          'subHtml': '<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>'
+                      }, {
+                          'src': 'http://tympanus.net/Development/ImageGridEffects/img/original/2.jpg',
+                          'thumb': 'http://tympanus.net/Development/ImageGridEffects/img/thumbs/2.jpg',
+                          'subHtml': "<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>"
+                      }, {
+                          'src': 'http://tympanus.net/Development/ImageGridEffects/img/original/1.jpg',
+                          'thumb': 'http://tympanus.net/Development/ImageGridEffects/img/thumbs/1.jpg',
+                          'subHtml': "<h4>Coniston Calmness</h4><p>Beautiful morning</p>"
+                      }]
+                    });
+                  });
+                  // SOUTH
+                  $("#south").on('click',function(){
+                    $(this).lightGallery({
+                      dynamic: true,
+                      dynamicEl: [{
+                          "src": 'http://tympanus.net/Development/ImageGridEffects/img/original/6.jpg',
+                          'thumb': 'http://tympanus.net/Development/ImageGridEffects/img/thumbs/6.jpg',
+                          'subHtml': '<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>'
+                      }, {
+                          'src': 'http://tympanus.net/Development/ImageGridEffects/img/original/5.jpg',
+                          'thumb': 'http://tympanus.net/Development/ImageGridEffects/img/thumbs/5.jpg',
+                          'subHtml': "<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>"
+                      }, {
+                          'src': 'http://tympanus.net/Development/ImageGridEffects/img/original/4.jpg',
+                          'thumb': 'http://tympanus.net/Development/ImageGridEffects/img/thumbs/4.jpg',
+                          'subHtml': "<h4>Coniston Calmness</h4><p>Beautiful morning</p>"
+                      }]
+                    });
+                  });
+                  // CAFE
+                  $("#hood").on('click',function(){
+                    $(this).lightGallery({
+                      dynamic: true,
+                      dynamicEl: [{
+                          "src": 'http://tympanus.net/Development/ImageGridEffects/img/original/9.jpg',
+                          'thumb': 'http://tympanus.net/Development/ImageGridEffects/img/thumbs/9.jpg',
+                          'subHtml': '<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>'
+                      }, {
+                          'src': 'http://tympanus.net/Development/ImageGridEffects/img/original/8.jpg',
+                          'thumb': 'http://tympanus.net/Development/ImageGridEffects/img/thumbs/8.jpg',
+                          'subHtml': "<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>"
+                      }, {
+                          'src': 'http://tympanus.net/Development/ImageGridEffects/img/original/7.jpg',
+                          'thumb': 'http://tympanus.net/Development/ImageGridEffects/img/thumbs/7.jpg',
+                          'subHtml': "<h4>Coniston Calmness</h4><p>Beautiful morning</p>"
+                      }]
+                    });
+                  });
+                });
+            </script>
+            <!--  -->
           </div>
         </div>
       </div>
