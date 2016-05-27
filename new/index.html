@@ -22,19 +22,21 @@
     <div class="header desktop-hidden">
     </div>
     <div class="main">
-      <div class="content">
+      <div class="content splash">
         <div class="grid">
           <div class="grid-left w-60">
             <!--  BEGIN GRID ITEM -->
             <div class="grid__item h-70 w-100">
               <div class="grid__item-content" style="background-image:url(http://www.paletteforyourpalate.com/images/exhibit/IMG_Art_Cocktail_7B.jpg);">
-                <a href="#">
-                  <h2 class="grid__item--title">Nestled in by Hood Mountain</h2>
-                  <div class="loader"></div>
-                  <span class="grid__item--cafe">Broder Øst</span>
-                  <div class="logistics">
-                    <span class="logistics__hours">Mon-Sun: 9a - 3p</span>
-                    <span class="logistics__location">666 Hell's Kitchen</span>
+                <a href="#" id="ost">
+                  <div class="splash-location">
+                    <span class="grid__item--cafe text-blue">Broder Øst</span>
+                    <h2 class="grid__item--title">Nestled in by Hood Mountain</h2>
+                    <div class="logistics">
+                      <span class="logistics__hours">Mon-Sun: 8a - 3p</span>
+                      <span class="logistics__location">2508 Clinton St., Hood River, OR</span>
+                    </div>
+                    <span class="logistics__phone">503-736-3333</span>
                   </div>
                 </a>
               </div>
@@ -44,13 +46,15 @@
             <!--  BEGIN GRID ITEM -->
             <div class="grid__item h-30 w-100">
               <div class="grid__item-content" style="background-image:url(http://www.paletteforyourpalate.com/images/exhibit/IMG_Art_Cocktail_3.jpg);">
-                <a href="#">
-                  <h2 class="grid__item--title">The first Swedish cafe</h2>
-                  <div class="loader"></div>
-                  <span class="grid__item--cafe">Cafe Broder</span>
-                  <div class="logistics">
-                    <span class="logistics__hours">Mon-Sun: 9a - 3p</span>
-                    <span class="logistics__location">1 Innovation Way</span>
+                <a href="#" id="nord">
+                  <div class="splash-location">
+                    <span class="grid__item--cafe text-purple">Broder Nord</span>
+                    <h2 class="grid__item--title">Join Us For Smorgasbord</h2>
+                    <div class="logistics">
+                      <span class="logistics__hours">Mon-Sun: 8a - 3p</span>
+                      <span class="logistics__location">2240 North Interstate Ave.</span>
+                    </div>
+                    <span class="logistics__phone">503-282-5555</span>
                   </div>
                 </a>
               </div>
@@ -64,13 +68,15 @@
             <!--  BEGIN GRID ITEM -->
             <div class="grid__item h-40 w-100">
               <div class="grid__item-content" style="background-image:url(http://www.paletteforyourpalate.com/images/exhibit/IMG_Art_Cocktail_8.jpg);">
-                <a href="#">
-                  <h2 class="grid__item--title">Perfect place for Brunch</h2>
-                  <div class="loader"></div>
-                  <span class="grid__item--cafe">Broder Nord</span>
-                  <div class="logistics">
-                    <span class="logistics__hours">Mon-Sun: 9a - 3p</span>
-                    <span class="logistics__location">777 Heaven's Highway</span>
+                <a href="#" id="soder">
+                  <div class="splash-location">
+                    <span class="grid__item--cafe text-pink">Broder Söder</span>
+                    <h2 class="grid__item--title">A Perfect Place To Brunch</h2>
+                    <div class="logistics">
+                      <span class="logistics__hours">Tues-Sun: 9a - 3p</span>
+                      <span class="logistics__location">8800 Southwest Oleson Rd.</span>
+                    </div>
+                    <span class="logistics__phone">503-373-8762</span>
                   </div>
                 </a>
               </div>
@@ -88,13 +94,15 @@
             <!--  BEGIN GRID ITEM -->
             <div class="grid__item h-60 w-80">
               <div class="grid__item-content" style="background-image:url(http://www.paletteforyourpalate.com/images/exhibit/IMG_Art_Cocktail_2.jpg);">
-                <a href="#">
-                  <h2 class="grid__item--title">A Full Scandavian Experience</h2>
-                  <div class="loader"></div>
-                  <span class="grid__item--cafe">Broder Sud</span>
-                  <div class="logistics">
-                    <span class="logistics__hours">Mon-Sun: 9a - 3p</span>
-                    <span class="logistics__location">2 Sweden Park</span>
+                <a href="#" id="cafe">
+                  <div class="splash-location">
+                    <span class="grid__item--cafe text-red">Cafe Broder</span>
+                    <h2 class="grid__item--title">The Original Broder</h2>
+                    <div class="logistics">
+                      <span class="logistics__hours">Mon-Sun: 9a - 3p</span>
+                      <span class="logistics__location">2508 Southeast Clinton St.</span>
+                    </div>
+                    <span class="logistics__phone">503-736-3333</span>
                   </div>
                 </a>
               </div>
@@ -119,11 +127,11 @@
             </ul>
           </div>
           <div class="sidebar__bottom w-100 h-20">
-            <a href="#" class="fa fa-pencil" id="north"></a>
+            <a href="#" class="fa fa-pencil"></a>
             <div class="side-divider"></div>
-            <a href="#"  class="fa fa-gift" id="hood"></a>
+            <a href="#"  class="fa fa-gift"></a>
             <div class="side-divider"></div>
-            <a href="#" class="fa fa-shopping-cart" id="south"></a>
+            <a href="#" class="fa fa-shopping-cart"></a>
             <!-- <div id="lightgallery" class="fa fa-shopping-cart">
               <a href="http://tympanus.net/Development/ImageGridEffects/img/thumbs/3.jpg">
                   <img src="http://tympanus.net/Development/ImageGridEffects/img/thumbs/3.jpg" />
@@ -135,7 +143,7 @@
             <script type="text/javascript">
                 $(document).ready(function() {
                   // NORTH
-                  $("#north").on('click',function(){
+                  $("#nord").on('click',function(){
                     $(this).lightGallery({
                       dynamic: true,
                       dynamicEl: [{
@@ -151,7 +159,7 @@
                     });
                   });
                   // SOUTH
-                  $("#south").on('click',function(){
+                  $("#soder").on('click',function(){
                     $(this).lightGallery({
                       dynamic: true,
                       dynamicEl: [{
@@ -170,7 +178,26 @@
                     });
                   });
                   // CAFE
-                  $("#hood").on('click',function(){
+                  $("#cafe").on('click',function(){
+                    $(this).lightGallery({
+                      dynamic: true,
+                      dynamicEl: [{
+                          "src": 'http://tympanus.net/Development/ImageGridEffects/img/original/9.jpg',
+                          'thumb': 'http://tympanus.net/Development/ImageGridEffects/img/thumbs/9.jpg',
+                          'subHtml': '<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>'
+                      }, {
+                          'src': 'http://tympanus.net/Development/ImageGridEffects/img/original/8.jpg',
+                          'thumb': 'http://tympanus.net/Development/ImageGridEffects/img/thumbs/8.jpg',
+                          'subHtml': "<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>"
+                      }, {
+                          'src': 'http://tympanus.net/Development/ImageGridEffects/img/original/7.jpg',
+                          'thumb': 'http://tympanus.net/Development/ImageGridEffects/img/thumbs/7.jpg',
+                          'subHtml': "<h4>Coniston Calmness</h4><p>Beautiful morning</p>"
+                      }]
+                    });
+                  });
+                  // Hood
+                  $("#ost").on('click',function(){
                     $(this).lightGallery({
                       dynamic: true,
                       dynamicEl: [{
@@ -196,6 +223,13 @@
       </div>
     </div>
     <div class="footer">
+      <ul style="">
+        <li><a href="" class="fa fa-twitter"></a></li>
+        <li><a href="" class="fa fa-yelp"></a></li>
+        <li><a href="" class="fa fa-instagram"></a></li>
+        <li><a href="" class="fa fa-email"></a></li>
+      </ul>
+      <span style="color: rgba(0,0,0,0.5); font-size: 0.875rem;margin-left: 32px;">© 2009-2016 Broder Restaurants | All Rights Reserved | <a href="https://www.google.com/maps/search/broder/@45.5212692,-122.6748358,14z/data=!3m1!4b1">Locations</a> | 503-736-3333 </span>
     </div>
   </div>
 </body>
