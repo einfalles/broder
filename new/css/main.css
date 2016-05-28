@@ -189,9 +189,22 @@ h4 {
   opacity:0.8;
   font-weight: 600;
 }
+.eateateat {
+  display: flex;
+  align-items: center;
+}
+.eateateat p {
+  margin:0;
+}
+.desktop-hidden {
+  display: none;
+}
 .menu__wrapper,
 .menu__note {
   padding:0 0 0 24px;
+}
+.menu__note a {
+  font-weight: 600;
 }
 .splash .grid__item:hover a {
   background-color: rgba(255,255,255,1);

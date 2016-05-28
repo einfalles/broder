@@ -16,9 +16,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/css/lightgallery.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/js/lightgallery-all.min.js"></script>
+    <link rel="stylesheet" href="http://www.paletteforyourpalate.com/css/animsition.css">
+    <script src="http://www.paletteforyourpalate.com/js/animsition.min.js"></script>
 </head>
 <body>
-  <div class="container">
+  <div class="container animsition">
     <div class="header desktop-hidden">
     </div>
     <div class="main">
@@ -120,18 +122,18 @@
           <div class="sidebar__top w-100 h-80">
             <div class="logo">Broder</div>
             <ul>
-              <li><a href="./">Home</a></li>
-              <li><a href="./menu.html">Menus</a></li>
-              <li><a href="./press.html">Press</a></li>
-              <li><a href="./about.html">About Us</a></li>
+              <li><a href="./" class="animsition-link">Home</a></li>
+              <li><a href="./menu.html"  class="animsition-link">Menus</a></li>
+              <li><a href="./press.html"  class="animsition-link">Press</a></li>
+              <li><a href="./about.html" class="animsition-link">About Us</a></li>
             </ul>
           </div>
           <div class="sidebar__bottom w-100 h-20">
-            <a href="#" class="fa fa-pencil"></a>
+            <a href="mailto:dlamnguyen@gmail.com?subject=Book%20An%20Event&body=Tell%20us%20how%20many%20,what%20time%20and%20date%20and%20the%20occassion%20.%20Thank%20you.%20" class="fa fa-pencil"></a>
             <div class="side-divider"></div>
-            <a href="#"  class="fa fa-gift"></a>
-            <div class="side-divider"></div>
-            <a href="#" class="fa fa-shopping-cart"></a>
+            <a href="https://www.paypal.com/vn/cgi-bin/webscr?cmd=_flow&SESSION=hJ-L3y_MJRYPdgv1pD626ta2l5R4obzscVOEW-p7-yutqNVAEf0DyI0fUqu&dispatch=50a222a57771920b6a3d7b606239e4d529b525e0b7e69bf0224adecfb0124e9b61f737ba21b0819848475f0da5465a2ea26eae033cbe3bda"  class="fa fa-gift"></a>
+            <!-- <div class="side-divider"></div> -->
+            <!-- <a href="#" class="fa fa-shopping-cart"></a> -->
             <!-- <div id="lightgallery" class="fa fa-shopping-cart">
               <a href="http://tympanus.net/Development/ImageGridEffects/img/thumbs/3.jpg">
                   <img src="http://tympanus.net/Development/ImageGridEffects/img/thumbs/3.jpg" />
@@ -142,6 +144,28 @@
             </div> -->
             <script type="text/javascript">
                 $(document).ready(function() {
+                  $(".animsition").animsition({
+                    inClass: 'fade-in',
+                    outClass: 'fade-out',
+                    inDuration: 1500,
+                    outDuration: 800,
+                    linkElement: '.animsition-link',
+                    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+                    loading: true,
+                    loadingParentElement: 'body', //animsition wrapper element
+                    loadingClass: 'animsition-loading',
+                    loadingInner: '<img src="http://cdn.shopify.com/s/files/1/0604/4405/products/broder-portland-logo-e1271752110657-300x264.png"/>', // e.g '<img src="loading.svg" />'
+                    timeout: false,
+                    timeoutCountdown: 5000,
+                    onLoadEvent: true,
+                    browser: [ 'animation-duration', '-webkit-animation-duration'],
+                    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+                    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+                    overlay : false,
+                    overlayClass : 'animsition-overlay-slide',
+                    overlayParentElement : 'body',
+                    transition: function(url){ window.location.href = url; }
+                  });
                   // NORTH
                   $("#nord").on('click',function(){
                     $(this).lightGallery({
@@ -231,34 +255,35 @@
       </ul>
       <span style="color: rgba(0,0,0,0.5); font-size: 0.875rem;margin-left: 32px;">© 2009-2016 Broder Restaurants | All Rights Reserved | <a href="https://www.google.com/maps/search/broder/@45.5212692,-122.6748358,14z/data=!3m1!4b1">Locations</a> | 503-736-3333 </span>
     </div>
-  </div>
-<style>
-.hallo {
-  position: absolute;
-  position: absolute;
-     top: 23%;
-     left: 35%;
+    <style>
+    .hallo {
+      position: absolute;
+      position: absolute;
+      top: 48%;
+      left: 38%;
 
-}
-.hallo__wrapper {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: black;
-  padding: 18px;
-  overflow: hidden;
-}
-</style>
-<!-- MISC ELEMENTS  -->
-<div class="hallo">
-  <div class="hallo__wrapper">
-    <h1>Hallå</h1>
+    }
+    .hallo__wrapper {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: black;
+      padding: 18px;
+      overflow: hidden;
+    }
+    </style>
+    <!-- MISC ELEMENTS  -->
+    <div class="hallo">
+      <div class="hallo__wrapper">
+        <h1>Hallå</h1>
+      </div>
+    </div>
   </div>
-</div>
+
 </body>
 </html>
