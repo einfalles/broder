@@ -21,7 +21,7 @@
 </head>
 <body>
   <div class="container animsition">
-    <div class="header desktop-hidden">
+    <div class="header">
     </div>
     <div class="main">
       <div class="content splash">
@@ -29,7 +29,7 @@
           <div class="grid-left w-60">
             <!--  BEGIN GRID ITEM -->
             <div class="grid__item h-70 w-100">
-              <div class="grid__item-content" style="background-image:url(http://www.paletteforyourpalate.com/images/exhibit/IMG_Art_Cocktail_7B.jpg);">
+              <div class="grid__item-content" style="background-image:url(./img/ost/13.jpeg);">
                 <a href="#" id="ost">
                   <div class="splash-location">
                     <span class="grid__item--cafe text-blue">Broder Øst</span>
@@ -47,7 +47,7 @@
 
             <!--  BEGIN GRID ITEM -->
             <div class="grid__item h-30 w-100">
-              <div class="grid__item-content" style="background-image:url(http://www.paletteforyourpalate.com/images/exhibit/IMG_Art_Cocktail_3.jpg);">
+              <div class="grid__item-content" style="background-image:url(./img/nord/17.jpg);">
                 <a href="#" id="nord">
                   <div class="splash-location">
                     <span class="grid__item--cafe text-purple">Broder Nord</span>
@@ -69,7 +69,7 @@
 
             <!--  BEGIN GRID ITEM -->
             <div class="grid__item h-40 w-100">
-              <div class="grid__item-content" style="background-image:url(http://www.paletteforyourpalate.com/images/exhibit/IMG_Art_Cocktail_8.jpg);">
+              <div class="grid__item-content" style="background-image:url(./img/soder/4.jpg);">
                 <a href="#" id="soder">
                   <div class="splash-location">
                     <span class="grid__item--cafe text-pink">Broder Söder</span>
@@ -86,7 +86,7 @@
             <!--  END GRID ITEM -->
             <!--  BEGIN GRID ITEM -->
             <div class="grid__item h-60 w-20">
-              <div class="grid__item-content" style="background-image:url(http://www.paletteforyourpalate.com/images/exhibit/IMG_Art_Dessert_7B.jpg);">
+              <div class="grid__item-content" style="background-image:url(./img/soder/2.jpg);">
                 <a href="#">
                   <h2 class="grid__item--title">Nordia House</h2>
                 </a>
@@ -95,7 +95,7 @@
             <!--  END GRID ITEM -->
             <!--  BEGIN GRID ITEM -->
             <div class="grid__item h-60 w-80">
-              <div class="grid__item-content" style="background-image:url(http://www.paletteforyourpalate.com/images/exhibit/IMG_Art_Cocktail_2.jpg);">
+              <div class="grid__item-content" style="background-image:url(./img/cafe/25.jpg);">
                 <a href="#" id="cafe">
                   <div class="splash-location">
                     <span class="grid__item--cafe text-red">Cafe Broder</span>
@@ -171,14 +171,20 @@
                     $(this).lightGallery({
                       dynamic: true,
                       dynamicEl: [{
-                          "src": 'http://tympanus.net/Development/ImageGridEffects/img/original/3.jpg',
-                          'thumb': 'http://tympanus.net/Development/ImageGridEffects/img/thumbs/3.jpg'
+                          "src": './img/nord/1.jpg',
+                          "thumb": './img/nord/1.jpg'
                       }, {
-                          'src': 'http://tympanus.net/Development/ImageGridEffects/img/original/2.jpg',
-                          'thumb': 'http://tympanus.net/Development/ImageGridEffects/img/thumbs/2.jpg'
+                          'src': './img/nord/2.jpg',
+                          'thumb': './img/nord/2.jpg'
+                      },{
+                          'src': './img/nord/3.jpg',
+                          'thumb': './img/nord/3.jpg'
                       }, {
-                          'src': 'http://tympanus.net/Development/ImageGridEffects/img/original/1.jpg',
-                          'thumb': 'http://tympanus.net/Development/ImageGridEffects/img/thumbs/1.jpg'
+                          'src': './img/nord/4.jpg',
+                          'thumb': './img/nord/4.jpg'
+                      }, {
+                          'src': './img/nord/6.jpg',
+                          'thumb': './img/nord/6.jpg'
                       }]
                     });
                   });
@@ -187,17 +193,20 @@
                     $(this).lightGallery({
                       dynamic: true,
                       dynamicEl: [{
-                          "src": 'http://tympanus.net/Development/ImageGridEffects/img/original/6.jpg',
-                          'thumb': 'http://tympanus.net/Development/ImageGridEffects/img/thumbs/6.jpg',
-                          'subHtml': '<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>'
+                          "src": './img/soder/1.jpg',
+                          "thumb": './img/soder/1.jpg'
                       }, {
-                          'src': 'http://tympanus.net/Development/ImageGridEffects/img/original/5.jpg',
-                          'thumb': 'http://tympanus.net/Development/ImageGridEffects/img/thumbs/5.jpg',
-                          'subHtml': "<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>"
+                          'src': './img/soder/2.jpg',
+                          'thumb': './img/soder/2.jpg'
+                      },{
+                          'src': './img/soder/3.jpg',
+                          'thumb': './img/soder/3.jpg'
                       }, {
-                          'src': 'http://tympanus.net/Development/ImageGridEffects/img/original/4.jpg',
-                          'thumb': 'http://tympanus.net/Development/ImageGridEffects/img/thumbs/4.jpg',
-                          'subHtml': "<h4>Coniston Calmness</h4><p>Beautiful morning</p>"
+                          'src': './img/soder/4.jpg',
+                          'thumb': './img/soder/4.jpg'
+                      }, {
+                          'src': './img/soder/6.jpg',
+                          'thumb': './img/soder/6.jpg'
                       }]
                     });
                   });
@@ -206,17 +215,20 @@
                     $(this).lightGallery({
                       dynamic: true,
                       dynamicEl: [{
-                          "src": 'http://tympanus.net/Development/ImageGridEffects/img/original/9.jpg',
-                          'thumb': 'http://tympanus.net/Development/ImageGridEffects/img/thumbs/9.jpg',
-                          'subHtml': '<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>'
+                          "src": './img/cafe/1.jpg',
+                          "thumb": './img/cafe/1.jpg'
                       }, {
-                          'src': 'http://tympanus.net/Development/ImageGridEffects/img/original/8.jpg',
-                          'thumb': 'http://tympanus.net/Development/ImageGridEffects/img/thumbs/8.jpg',
-                          'subHtml': "<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>"
+                          'src': './img/cafe/2.jpg',
+                          'thumb': './img/cafe/2.jpg'
+                      },{
+                          'src': './img/cafe/3.jpg',
+                          'thumb': './img/cafe/3.jpg'
                       }, {
-                          'src': 'http://tympanus.net/Development/ImageGridEffects/img/original/7.jpg',
-                          'thumb': 'http://tympanus.net/Development/ImageGridEffects/img/thumbs/7.jpg',
-                          'subHtml': "<h4>Coniston Calmness</h4><p>Beautiful morning</p>"
+                          'src': './img/cafe/4.jpg',
+                          'thumb': './img/cafe/4.jpg'
+                      }, {
+                          'src': './img/cafe/6.jpg',
+                          'thumb': './img/cafe/6.jpg'
                       }]
                     });
                   });
@@ -225,17 +237,20 @@
                     $(this).lightGallery({
                       dynamic: true,
                       dynamicEl: [{
-                          "src": 'http://tympanus.net/Development/ImageGridEffects/img/original/9.jpg',
-                          'thumb': 'http://tympanus.net/Development/ImageGridEffects/img/thumbs/9.jpg',
-                          'subHtml': '<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>'
+                          "src": './img/ost/1.jpg',
+                          "thumb": './img/ost/1.jpg'
                       }, {
-                          'src': 'http://tympanus.net/Development/ImageGridEffects/img/original/8.jpg',
-                          'thumb': 'http://tympanus.net/Development/ImageGridEffects/img/thumbs/8.jpg',
-                          'subHtml': "<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>"
+                          'src': './img/ost/2.jpg',
+                          'thumb': './img/ost/2.jpg'
+                      },{
+                          'src': './img/ost/3.jpg',
+                          'thumb': './img/ost/3.jpg'
                       }, {
-                          'src': 'http://tympanus.net/Development/ImageGridEffects/img/original/7.jpg',
-                          'thumb': 'http://tympanus.net/Development/ImageGridEffects/img/thumbs/7.jpg',
-                          'subHtml': "<h4>Coniston Calmness</h4><p>Beautiful morning</p>"
+                          'src': './img/ost/4.jpg',
+                          'thumb': './img/ost/4.jpg'
+                      }, {
+                          'src': './img/ost/6.jpg',
+                          'thumb': './img/ost/6.jpg'
                       }]
                     });
                   });

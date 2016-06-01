@@ -77,7 +77,6 @@ body{
   width: 100%;
 }
 .footer {
-  padding: 0 4%;
   display: flex;
   align-items: center;
 }
@@ -333,11 +332,16 @@ h4 {
   -o-transition: all 600ms ease;
   transition: all 600ms ease;
 }
+.hide {
+  display: none;
+}
 .press .grid__item--title {
   font-size:18px;
   font-weight: 700;
   color: rgba(0,0,0,1);
   margin:0!important;
+  padding: 0 12px;
+  text-align: center;
 }
 .grid__item--author {
   font-weight: 500;
