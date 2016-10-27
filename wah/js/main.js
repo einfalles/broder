@@ -38,7 +38,10 @@ $(document).ready(function(){
       $this.fadeIn(500);
     });
   },6000);
-  pos_hallo();
+  if ($("#cafe").length){
+      pos_hallo();
+  }
+
   function pos_hallo() {
     var bottom = $("#cafe").height() + $("#cafe").offset()['top']-115;
     var right = $("#cafe").offset()['left'] + $("#cafe").width()-115;
