@@ -3,6 +3,7 @@ $(document).ready(function(){
   var mainWidth = $(window).width()-fakeMargins;
   $('.main').width(mainWidth);
   $('.header').width(mainWidth);
+  $('.header').css('display','none');
   $('.footer').width(mainWidth);
   $('#menu-select').change(function(){
     console.log(this.value);
@@ -43,8 +44,8 @@ $(document).ready(function(){
   }
 
   function pos_hallo() {
-    var bottom = $("#cafe").height() + $("#cafe").offset()['top']-115;
-    var right = $("#cafe").offset()['left'] + $("#cafe").width()-115;
+    var bottom = $("#cafe").height() + $("#cafe").offset()['top']-130;
+    var right = $("#cafe").offset()['left'] + $("#cafe").width()-130;
     var pos = {'bottom': bottom, 'right': right};
     $(".hallo").css('top', pos['bottom']);
     $(".hallo").css('left', pos['right']);
